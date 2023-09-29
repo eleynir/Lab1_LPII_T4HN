@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.cibertec.Empleado" table="EMPLEADO">
+        <id name="idEmpleado" column="IdEmpleado" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="apellidos" column="Apellidos" type="string"/>
+        <property name="nombres" column="Nombres" type="string"/>
+        <property name="edad" column="Edad" type="int"/>
+        <property name="sexo" column="Sexo" type="char"/>
+        <property name="salario" column="Salario" type="double"/>
+    </class>
+</hibernate-mapping>
